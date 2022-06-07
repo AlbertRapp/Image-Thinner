@@ -47,11 +47,15 @@ tabPanel(
 
 ```
 theme = bslib::bs_theme(
+  # Colors (background, foreground, primary)
   bg = 'white', 
   fg = '#06436e', 
   primary = colorspace::lighten('#06436e', 0.3),
-  base_font = 'Source Sans Pro',
-  heading_font = 'Oleo Script'
+  
+  # Fonts (Use multiple in case a font cannot be displayed)
+  base_font = c('Source Sans Pro',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular'),
+  heading_font = c('Oleo Script', 'Prata', 'Roboto', 'Playfair Display', 'Montserrat'),
+  font_scale = 1.25
 )
 ```
 
